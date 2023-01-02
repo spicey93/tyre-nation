@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-2" href="/">TYRE<span class="text-warning">NATION</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="tyreServicesDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tyre Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="tyreServicesDropdownMenuLink">
+              <li><a class="dropdown-item" href="/tyre-services/mobile-tyre-fitting/">Mobile Tyre Fitting</a></li>
+              <li><a class="dropdown-item" href="/tyre-services/24-hour-emergency-tyre-fitting/">24 Hour Emergency Tyre Fitting</a></li>
+              <li><a class="dropdown-item" href="/tyre-services/mobile-caravan-tyre-fitting/">Mobile Caravan Tyre Fitting</a></li>
+              <li><a class="dropdown-item" href="/tyre-services/puncture-repair/">Puncture Repair</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="otherServicesDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Other Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="otherServicesDropdownMenuLink">
+                <li><a class="dropdown-item" href="/other-services/locking-wheel-nut-removal/">Locking Wheel Nut Removal</a></li>
+                <li><a href="/other-services/tpms" class="dropdown-item">TPMS</a></li>
+                <li><a href="/other-services/alloygator-rim-protectors" class="dropdown-item">AlloyGator Rim Protectors</a></li>
+              </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact/">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="ms-auto d-none d-lg-block">
+        <a href="#" class="btn btn-light fw-bold">Call 01623 434432</a>
+      </div> -->
+    </div>
+  </nav>
+
+<script>
+    const navItems = document.querySelectorAll(".nav-link");
+    for (let item of navItems) {
+        item.classList.add("text-white");
+    }
+</script>

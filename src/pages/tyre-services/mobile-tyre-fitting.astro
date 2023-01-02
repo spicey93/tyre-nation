@@ -1,0 +1,48 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Hero from '../../components/Hero.astro';
+import Intro from '../../components/Intro.astro';
+import CTA from '../../components/CTA.astro';
+import Coverage from '../../components/Coverage.astro';
+
+const title = "Mobile Tyre Fitting";
+const bgImg = "url(/img/mobile-tyre-fitting.jpeg)"
+const heading = "Mobile Tyre Fitting";
+const tagline = "We come to you at home, work or roadside";
+const mainHeading = "Mobile Tyre Fitting"
+---
+
+<Layout title={`${title} | Tyre Nation Ltd`}>
+	<Hero heading={heading} tagline={tagline} bgImg={bgImg}/>
+	<Intro mainHeading={mainHeading}>
+		<p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dolorem consectetur soluta neque perferendis. Accusantium totam laborum magni, vero similique sint repellendus tenetur reprehenderit eveniet velit nam dicta sit voluptatibus.</p>
+	</Intro>
+	<Coverage />
+	<CTA />
+	<!-- <main class="container py-5">
+		<div class="text-center">
+			<h1 class="mb-3">Mobile Tyre Fitting in Nottingham</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempore earum quo perferendis cumque voluptatum perspiciatis magni reprehenderit unde fugit aut consequuntur, accusamus eos aperiam! Illo asperiores perspiciatis debitis incidunt.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non saepe ut nobis sit possimus minima, pariatur est corporis laudantium tempora ipsa eius nostrum alias aspernatur iusto accusantium rerum illum iure.</p>
+		</div>
+		<h2>How It Works</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In esse tempore distinctio maiores quae non fugit voluptates praesentium beatae, magni obcaecati impedit ad dignissimos voluptatibus quod laborum fugiat sed iure.</p>
+		<h2>Why Choose Us</h2>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, dicta officiis pariatur sunt earum sit vel sint aperiam atque a incidunt hic eos aliquam enim amet dolorum repellendus necessitatibus harum.</p>
+		<ul>
+			<li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, veritatis.</li>
+			<li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, veritatis.</li>
+			<li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, veritatis.</li>
+		</ul>
+		<h2>Areas We Cover</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, explicabo! Neque, omnis. Atque repellendus perspiciatis aliquid harum sunt a ab?</p>
+		<ul>
+			<li>Nottingham</li>
+			<li>Mansfield</li>
+			<li>Newark-on-Trent</li>
+			<li>Worksop</li>
+		</ul>
+	</main>
+	<Map />
+	<ContactSection /> -->
+</Layout>

@@ -1,0 +1,16 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Hero from '../../components/Hero.astro';
+import Intro from '../../components/Intro.astro';
+const title = "Mobile Caravan Tyre Fitting"
+const heading = "Caravan Tyres Fitted at Home"
+const tagline = "Change your caravan tyres the easy way"
+const mainHeading = "Mobile Caravan Tyre Fitting"
+---
+
+<Layout title={`${title} | Tyre Nation Ltd`}>
+    <Hero heading={heading} tagline={tagline} />
+    <Intro mainHeading={mainHeading}>
+		<p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dolorem consectetur soluta neque perferendis. Accusantium totam laborum magni, vero similique sint repellendus tenetur reprehenderit eveniet velit nam dicta sit voluptatibus.</p>
+	</Intro>
+</Layout>

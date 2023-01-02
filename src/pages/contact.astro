@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ContactForm from '../components/ContactForm.astro';
+import Map from '../components/Map.astro';
+---
+
+<Layout title="Contact | Tyre Nation">
+	<main>
+        <div class="bg-light">
+            <div class="container py-3">
+                <h1 class="py-3 text-center">Contact</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <h2 class="mb-3">Get In Touch With Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias repellendus voluptate architecto esse fugit repudiandae, dolore explicabo corrupti delectus mollitia! Aperiam, et quo! Vitae numquam sapiente accusantium suscipit libero vero.</p>
+                    <ul>
+                        <li>Phone</li>
+                        <li>Email</li>
+                    </ul>
+                    <h2 class="mb-3">Leave Us a Review</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, delectus nesciunt. Unde facilis tempora sequi suscipit expedita. Illo beatae nisi delectus deserunt quas officiis! Iste minus ullam natus quis labore.</p>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Google</li>
+                        <li>Yell</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                    <h2 class="mb-3">Send Us a Message</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem vero expedita delectus sit asperiores natus, doloribus laudantium. Numquam, provident neque. Tempora, assumenda! Quibusdam eaque autem labore ab commodi error illum?</p>
+                    <ContactForm />
+                </div>
+            </div>
+        </div>
+        <Map />
+	</main>
+</Layout>

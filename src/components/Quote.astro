@@ -1,0 +1,96 @@
+<form action="https://formsubmit.co/spicerdean@icloud.com" method="post" class="bg-white p-4 border shadow-lg rounded-3">
+    <h3 class="text-center mb-3">Get Quote</h3>
+    <!-- <input type="hidden" name="_next" value="https://tyrenation.co.uk/thank-you"> -->
+    <input type="hidden" name="_template" value="box">
+    <input type="hidden" name="_subject" value="Quote Submission | Tyre Nation">
+    <input type="hidden" name="_autoresponse" value="Thank you for getting in touch with us for a quote. You will receive an email or phone call very soon from one of our team.">
+    <div id="regSection">
+        <div class="mb-2">
+            <input type="text" class="form-control form-control-lg text-center" placeholder="Enter Reg" id="regInput" name="Registration">
+        </div>
+        <div class="d-grid">
+            <button class="btn btn-dark" id="regBtn">Next</button>
+        </div>
+    </div>
+    <div id="postcodeSection" class="d-none">
+        <div class="mb-2">
+            <input type="text" class="form-control form-control-lg text-center" placeholder="Enter Postcode" id="postcodeInput" name="Postcode">
+        </div>
+        <div class="row">
+            <div class="col-6 d-grid">
+                <button class="btn-light btn" id="backToRegBtn">Back</button>
+            </div>
+            <div class="col-6 d-grid">
+                <button class="btn btn-dark" id="postcodeBtn">Next</button>
+            </div>
+        </div>
+    </div>
+    <div id="contactSection" class="d-none">
+        <div class="mb-2">
+            <input type="text" class="form-control form-control-lg" placeholder="Name" required name="Name">
+        </div>
+        <div class="mb-2">
+            <input type="tel" class="form-control form-control-lg" placeholder="Tel" required name="Phone">
+        </div>
+        <div class="mb-2">
+            <input type="email" class="form-control form-control-lg" placeholder="E-Mail" required name="Email">
+        </div>
+        <div class="mb-2">
+            <textarea name="Message" id="message" cols="30" rows="3" class="form-control form-control-lg" placeholder="Message" required></textarea>
+        </div>
+        <div class="row">
+            <div class="col-6 d-grid">
+                <button class="btn-light btn" id="backToPostcodeBtn">Back</button>
+            </div>
+            <div class="col-6 d-grid">
+                <button class="btn btn-dark">Submit</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script>
+    const regSection = document.getElementById("regSection")
+    const postcodeSection = document.getElementById("postcodeSection")
+    const regBtn = document.getElementById("regBtn")
+    const backToRegBtn = document.getElementById("backToRegBtn")
+    const postcodeBtn = document.getElementById("postcodeBtn")
+    const backToPostcodeBtn = document.getElementById("backToPostcodeBtn")
+    const contactSection = document.getElementById("contactSection")
+
+    regBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const regInput = document.getElementById("regInput").value;
+        if (!regInput) {
+            alert("Enter your vehicle registration or tyre size")
+        } else {
+            regSection.classList.add("d-none")
+            postcodeSection.classList.remove("d-none")
+        }
+    })
+
+    backToRegBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        regSection.classList.remove("d-none")
+        postcodeSection.classList.add("d-none")
+    })
+
+    postcodeBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const postcodeInput = document.getElementById("postcodeInput").value;
+        if (!postcodeInput) {
+            alert("Enter your postcode")
+        } else {
+            postcodeSection.classList.add("d-none")
+            contactSection.classList.remove("d-none")
+        }
+    })
+
+    backToPostcodeBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        postcodeSection.classList.remove("d-none");
+        contactSection.classList.add("d-none")
+    })
+
+
+</script>
