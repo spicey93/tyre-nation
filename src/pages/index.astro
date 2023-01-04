@@ -8,14 +8,14 @@ import CTA from '../components/CTA.astro';
 const title = "Mobile Tyre Fitting, Puncture Repair, Lock Nut Removal & TPMS"
 const bgImg = "url(/img/home-img.png)"
 const heading = "Expert Tyre Service at Your Doorstep"
-const tagline = "Why spend time at a tyre shop? We can come to you"
-const mainHeading = "Tyre Nation"
+const tagline = "Why spend hours at a tyre shop? We'll come to you"
+const mainHeading = "Newark Mobile Tyres"
 ---
 
-<Layout title={`${title} | Tyre Nation`}>
+<Layout title={`${title} | ${mainHeading}`}>
     <Hero heading={heading} tagline={tagline} bgImg={bgImg}/>
     <Intro mainHeading={mainHeading}>
-        <p class="lead">Welcome to Tyre Nation, your <strong class="fw-bold">local mobile tyre fitters in Newark</strong>. At Tyre Nation, we believe in providing high-quality tyre services with honesty, reliability, and professionalism. Our team of experienced technicians is dedicated to ensuring that our customers receive the best possible service at competitive prices.</p>
+        <p class="lead">Welcome to {mainHeading}, your local <strong class="fw-bold">mobile tyre fitters in Newark & Sherwood</strong>. At {mainHeading}, we believe in providing high-quality tyre services with honesty, reliability, and professionalism. Our team of experienced technicians is dedicated to ensuring that our customers receive the best possible service at competitive prices.</p>
         <p class="lead">Whether you need new tyres for your car, van, or SUV, we have a wide range of options to choose from, and our mobile service makes it easy for you to get the tyres you need wherever you are. Contact us today to learn more about how we can help you get back on the road safely and smoothly.</p>
     </Intro>
     <div class="container">
