@@ -1,12 +1,19 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Hero from '../../components/Hero.astro';
+import Intro from '../../components/Intro.astro';
+import Content from '../../components/Content.astro';
 const title = "Locking Wheel Nut Removal"
 const bgImg = "url(/img/locking-wheel-nut-removal.png)"
 const heading = "Lost Your Locking Wheel Nut Key?"
 const tagline = "We can remove damaged or over-tightened locking wheel nuts"
+const mainHeading = "Locking Wheel Nut Removal In Newark"
 ---
 
-<Layout title={`${title} | Tyre Nation`}>
+<Layout title={`${title} In Newark | Newark Tyres`}>
 	<Hero heading={heading} tagline={tagline} bgImg={bgImg}/>
+	<Intro mainHeading={mainHeading}>
+		<p>At Newark Tyres, we provide a mobile locking wheel nut removal service across many areas of Newark and Sherwood. If you've lost your locking wheel nut key, or the wheel nuts have been over-tightened, we can come to you at home or roadside and remove them today. Send us a message to get a quote.</p>
+	</Intro>
+	<Content />
 </Layout>

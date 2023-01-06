@@ -2,12 +2,17 @@
 import Layout from '../../layouts/Layout.astro';
 import Hero from '../../components/Hero.astro';
 import Intro from '../../components/Intro.astro';
+import Content from '../../components/Content.astro';
 const title = "Mobile Caravan Tyre Fitting"
 const heading = "Caravan Tyres Fitted at Home"
 const tagline = "Change your caravan tyres the easy way"
 const mainHeading = "Mobile Caravan Tyre Fitting"
 ---
 
-<Layout title={`${title} | Tyre Nation Ltd`}>
+<Layout title={`${title} In Newark | Newark Tyres`}>
     <Hero heading={heading} tagline={tagline} />
+    <Intro mainHeading={`${mainHeading} In Newark`}>
+        <p>When your caravan tyres are six years  old, it's time to replace them. Unfortunately, that normally involves the hassle of towing your caravan to a local tyre shop. However, with our convenient <strong class="fw-bold">mobile caravan tyre fitting</strong> service, you can have your caravan tyres fitted at home or on-site at no extra cost. Simply get in touch with us with your tyre size and postcode, and we'll get back to you with a competitive quote.</p>
+    </Intro>
+    <Content />
 </Layout>

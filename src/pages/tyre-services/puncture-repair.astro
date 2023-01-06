@@ -2,12 +2,17 @@
 import Layout from '../../layouts/Layout.astro';
 import Hero from '../../components/Hero.astro';
 import Intro from '../../components/Intro.astro';
+import Content from '../../components/Content.astro';
 const title = "Puncture Repair"
 const heading = "Mobile Tyre Repair"
 const tagline = "Have your flat tyre fixed at home"
-const mainHeading = "Puncture Repair in Mansfield"
+const mainHeading = "Puncture Repair In Newark"
 ---
 
-<Layout title={`${title} | Tyre Nation Ltd`}>
+<Layout title={`${title} In Newark | Newark Tyres`}>
     <Hero heading={heading} tagline={tagline} />
+    <Intro mainHeading={mainHeading}>
+        <p>If you've got a flat tyre and need a puncture repair at home, look no further! Here at Newark Tyres, we offer a convenient mobile tyre repair service at your home or workplace. All you have to do is send us a message with your vehicle details and postcode. We can then arrange one of our technicians to come to you and repair your tyre the very same day.</p>
+    </Intro>
+    <Content />
 </Layout>

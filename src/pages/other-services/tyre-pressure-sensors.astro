@@ -1,11 +1,18 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Hero from '../../components/Hero.astro';
+import Intro from '../../components/Intro.astro';
+import Content from '../../components/Content.astro';
 const title = "TPMS"
 const heading = "Tyre Pressure Sensors"
 const tagline = "Got a faulty TPMS sensor? We can fix it for you"
+const mainHeading = "Tyre Pressure Sensor Replacement In Newark"
 ---
 
-<Layout title={`${title} | Tyre Nation`}>
+<Layout title={`${title} In Newark | Newark Tyres`}>
 	<Hero heading={heading} tagline={tagline}/>
+	<Intro mainHeading={mainHeading}>
+		<p>If you've got a faulty TPMS light and need a new tyre pressure sensor fitted at home, we can help. Our mobile tyre technicians are qualified in dealing with TPMS systems, and we can replace and reprogramme new sensors to any vehicle on the market. Get in touch with us today for a quote.</p>
+	</Intro>
+	<Content />
 </Layout>

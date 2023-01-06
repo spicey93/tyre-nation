@@ -1,11 +1,18 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Hero from '../../components/Hero.astro';
+import Intro from '../../components/Intro.astro';
+import Content from '../../components/Content.astro';
 const title = "AlloyGator Wheel Protectors"
 const heading = "Alloy Wheel Protectors"
 const tagline = "Prevent curb rash and personalise your wheels"
+const mainHeading = "AlloyGator Rim Protectors In Newark"
 ---
 
-<Layout title={`${title} | Tyre Nation`}>
+<Layout title={`${title} | Newark Tyres`}>
 	<Hero heading={heading} tagline={tagline}/>
+	<Intro mainHeading={mainHeading}>
+		<p>Have you just had your rims refurbished and want to prevent them from being damaged from curbs? In that case, the AlloyGator Rim Protectors are the ideal solution for you! These wheel protectors are great for dealing with day-to-day driving hazards that could potentially mark your rims. We provide a mobile fitting service across Newark and Sherwood areas at no extra cost, and we keep a wide range of colors in stock. Get in touch with us today for a quote.</p>
+	</Intro>
+	<Content />
 </Layout>

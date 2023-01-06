@@ -2,8 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Hero from '../../components/Hero.astro';
 import Intro from '../../components/Intro.astro';
-import CTA from '../../components/CTA.astro';
-import Coverage from '../../components/Coverage.astro';
+import Content from '../../components/Content.astro';
 
 const title = "Mobile Tyre Fitting";
 const bgImg = "url(/img/mobile-tyre-fitting.jpeg)"
@@ -12,11 +11,10 @@ const tagline = "We come to you at home, work or roadside";
 const mainHeading = "Mobile Tyre Fitting"
 ---
 
-<Layout title={`${title} | Tyre Nation Ltd`}>
+<Layout title={`${title} In Newark | Newark Tyres`}>
 	<Hero heading={heading} tagline={tagline} bgImg={bgImg}/>
 	<Intro mainHeading={`${mainHeading} In Newark`}>
 		<p>At Newark Tyres, we understand that getting new tyres can be a hassle, which is why we offer a convenient mobile service that brings our expert technicians right to your doorstep. Whether you need new tyres for your car, van, or 4x4, we have a wide range of options to choose from, and our mobile service makes it easy for you to get the tyres you need wherever you are.</p>
 	</Intro>
-	<Coverage />
-	<CTA />
+	<Content />
 </Layout>
